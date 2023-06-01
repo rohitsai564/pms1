@@ -1,0 +1,27 @@
+<body>
+  <div class= "th">
+    <h2>Theme</h2>
+    <form [formGroup]="themeForm" (submit)="onSave()">
+    <div class="all">
+    <div class="tn">
+    <label for="themeName">Theme Name</label>
+    <input type="text" id="themeName" name="themeName" formControlName="themeName"  >
+    <span class="error_msg" *ngIf="themeForm.controls['themeName'].touched"></span>
+    </div>
+    <div class="rk">
+    <label for="risk"> Risk Level</label>
+    <input type="text" id="risk" name="risk" formControlName="risk">
+    <span class="error_msg" *ngIf="themeForm.controls['risk'].touched"></span>
+    </div>
+    <div class="in">
+    <label for="investmentHorizon">Investment Horizon</label>
+    <input type="text" id="investmentHorizon" name="investmentHorizon" formControlName="investmentHorizon">
+    <span class="error_msg" *ngIf="themeForm.controls['investmentHorizon'].touched"></span>
+    </div>
+    <br>
+    <!-- <div class="su"><button type="submit">Save</button></div> -->
+    <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+    </form>
+    </div>
+  </body>

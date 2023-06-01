@@ -1,0 +1,87 @@
+.c{
+    background-color: rgb(184, 232, 247);
+}
+
+  .container {
+    border-radius: 5px;
+    background-color: #95cdf3;
+    padding: 0px;
+    align-items: center; 
+    align-content: center;
+    align-self: center;
+    display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+  float: center;
+  width: max-content;
+  /* width: 50%;
+  height:50%; */
+  }
+  /* .form-control{
+    float: right;
+    margin-left: -53%;
+    position: relative;
+    margin-top: -2%;
+    margin-right: -30%;
+    margin-left: 100%;
+    width: 50%;
+    display: flex;
+    outline: none;
+    margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+    border: none;
+    border-bottom: 2px solid red;
+  } */
+  /* .i{
+    margin-left: 10%;
+  } 
+  .form-label{
+    margin-left: -35%;
+     float: left; 
+    display: flex;
+    padding-left: 10%;
+  }
+  /* .col{
+    margin-right: 100%;
+  } */
+  .btn{
+    background-color: #20bd40;
+    margin-left: -160%;
+    font-size: 16px;
+    padding: 2px 10px;
+    height:45px;
+    width: 60px;
+  }
+  .h{
+    margin-left: 30%;
+    padding-bottom: 50%;
+   
+  }
+  .c1{
+    margin-top: -50%;
+    margin-left: 10%;
+  }
+  .createPortForm{
+    /* justify:center; */
+    align-items: center;
+  }
+  .c2{
+    margin-top: -55%;
+    margin-left: 55%;
+
+  }
+  .form-control{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+  .createPortForm{
+    display: flex;
+  }
+  .container{
+    display: flex;
+  }

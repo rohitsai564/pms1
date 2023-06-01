@@ -1,0 +1,134 @@
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+
+
+          <div class="container-fluid">
+
+          <button
+
+class="navbar-toggler"
+
+type="button"
+
+data-mdb-toggle="collapse"
+data-mdb-target="#navbarRightAlignExample"
+aria-controls="navbarRightAlignExample"
+
+aria-expanded="false"
+
+aria-label="Toggle navigation">
+ <i class="fas fa-bars"></i>
+
+</button>
+
+---Collapsible wrapper -->
+<!-- <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+  <div class="navbar-nav">
+    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+
+  </div></ul></div></div>
+          </div></div></div></nav><br> -->
+
+
+          <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+           
+            <div>
+              <a class="navbar-brand" routerlink="/home">
+                  <img src="../../assets/images/logo7.jpg" alt="" width="60px" height="60px" alt="">
+              </a>
+          </div>
+       
+          <div class="container-fluid">
+          
+        
+          
+          <button
+          
+          class="navbar-toggler"
+          
+          type="button"
+          
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarRightAlignExample"
+          aria-controls="navbarRightAlignExample"
+          
+          aria-expanded="false"
+          
+          aria-label="Toggle navigation">
+           <i class="fas fa-bars"></i>
+          
+          </button>
+          
+          
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+          </div>
+            </ul></div></div></nav><br>  -->
+
+<div>
+   
+
+        <table class="table  table-bordered">
+
+            <thead class="table-dark">
+            
+            <tr>
+               
+                <th>Security Code</th>
+                <th>Symbol</th>
+                <th>Security Name</th>
+                <th>ISIN No</th>
+                <th> Sector</th>
+                <th> Industry</th>
+                <th>Exchange</th>
+                <th>Currency</th>
+                <th>Gics</th>
+                <th>last</th>
+                <th>close</th>
+              
+                <th>Country</th>
+                <!-- <th>Action</th> -->
+        </tr>
+            </thead>
+            <tbody>
+        <tr *ngFor="let s of allstocks| paginate: {itemsPerPage:100,currentPage:p}; ">
+            
+            <td>{{s.securityCode}}</td> 
+                <td>{{s.symbol}}</td>
+                <td>{{s.securityName}}</td>
+                <td>{{s.isinNo}}</td>
+                <td>{{s.sector}}</td>
+                <td>{{s.industry}}</td>
+                <td>{{s.exchange}}</td>
+                <td>{{s.currency}}</td>
+                <td>{{s.gics}}</td>
+                <td>{{s.last}}</td>
+                <td>{{s.close}}</td>
+                <td>{{s.country}}</td>
+                <!-- <td><a type="button" class="btn">
+                  <i class="material-icons text-warning">edit</i>
+                </a>
+                <a type="button" class="btn">
+                  <i class="material-icons text-danger">delete</i>
+                </a></td> -->
+
+               
+        </tr>
+    </tbody>
+<pagination-controls (pageChange)="p= $event"></pagination-controls>
+    </table>
+</div>

@@ -1,0 +1,74 @@
+.bg{
+    background-image: url("../../assets/images/industry2.jpg");
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-header{
+    /* width: 80%; */
+    /* padding-right: 50%; */
+    margin:auto;
+  width: 80%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: rgb(138, 250, 201);
+
+}
+
+.search-box.form-control {
+    top: 50%;
+    left:45%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 20%;
+}
+
+.form-control{
+    width: 35%;
+    text-align:left;
+    /* float: right; */
+    margin-left:40%;
+    /* margin-right: 40%; */
+    /* position: relative; */
+    /* margin-top: -2%; */
+    /* margin-right: 100%; */
+
+}
+
+.btn btn-outline-secondary{
+    /* float:right; */
+    position: relative;
+}
+.col-sm-8{
+    /* margin-left: 250px; */
+    margin-right: 180px;
+    margin-top: 55px;
+}
+.price{
+    margin-top: -80px;
+    margin-left:20% ;
+}
+.unit{
+    margin-left: 35%;
+    margin-top: -88px;
+}
+
+
+.rec{
+    margin-left: -4%;
+}
+.ava{
+    margin-left: -1%;
+}
+.ac{
+margin-left: 20%;
+}
+.total{
+    margin-left: 55%;
+    margin-top:-89px ;
+}

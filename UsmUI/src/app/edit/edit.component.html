@@ -1,0 +1,130 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div>
+      <a class="navbar-brand" href="#">
+          <img src="../../assets/images/logo7.jpg" alt="" width="60px" height="60px" alt="">
+      </a>
+  </div>
+    <div class="container-fluid">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="navbar-nav">
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a></li>
+            </ul></div></div></nav>
+
+            <div class="card text-center">
+                <div class="card-header">
+                  <form #searchIsin="ngForm" (submit)="searchSubmit(searchIsin)">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search by ISIN NO" aria-label="Recipient's username" aria-describedby="button-addon2" name="isinNo" ngModel #isinNo="ngModel">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Get Details">Submit</button>
+                  </div>
+                  </form>
+                </div>
+
+                <table class="table  table-bordered">
+
+                    <thead class="table-dark">
+                      <tr>
+                
+                    
+                        <th>ISIN No</th>
+                            <th>Symbol</th>
+                            <th>Security Name</th>
+                           
+                            <th> Sector</th>
+                            <th> Industry</th>
+                            
+                            <th>Gics</th> 
+                            
+                            <th>Country</th>
+                            <th>Close</th>
+            <th>Last</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr *ngFor="let s of Nse;let i = index">
+                            
+                          <td>{{s.isinNo}}</td>
+
+                          <td>{{s.symbol}}</td>
+                                
+
+                                <div *ngIf="s.isEdit">
+                                  <input type="text" [(ngModel)]="s.securityName" class="form.control"/>
+                      
+                                </div>
+                                <div  *ngIf="!s.isEdit">
+                                  {{s.securityName}}
+                                </div>
+                                
+                                <td><div *ngIf="s.isEdit">
+                            <input type="text" [(ngModel)]="s.sector" class="form.control"/>
+                
+                          </div>
+                          <div  *ngIf="!s.isEdit">
+                            {{s.sector}}
+                          </div>
+                        </td>
+                        <td><div *ngIf="s.isEdit">
+                          <input type="text" [(ngModel)]="s.industry" class="form.control"/>
+              
+                        </div>
+                        <div  *ngIf="!s.isEdit">
+                          {{s.industry}}
+                        </div>
+                      </td>
+                                
+                              
+                                <td>{{s.gics}}</td> 
+                                
+                                <td><div *ngIf="s.isEdit">
+                                  <input type="text" [(ngModel)]="s.country" class="form.control"/>
+                      
+                                </div>
+                                <div  *ngIf="!s.isEdit">
+                                  {{s.country}}
+                                </div>
+                              </td>
+                              <td><div *ngIf="s.isEdit">
+                                <input type="text" [(ngModel)]="s.close" class="form.control"/>
+                    
+                              </div>
+                              <div  *ngIf="!s.isEdit">
+                                {{s.close}}
+                              </div>
+                            </td>
+                            <td><div *ngIf="s.isEdit">
+                              <input type="text" [(ngModel)]="s.last" class="form.control"/>
+                  
+                            </div>
+                            <div  *ngIf="!s.isEdit">
+                              {{s.last}}
+                            </div>
+                          </td>
+                                
+                                <td>
+                                  <div *ngIf="s.isEdit">
+                                    <button class="btn btn-primary  btn-sm"  (click)="onUpdate(s)">Update</button>
+                                    <button class="btn btn-primary  btn-sm"  (click)="s.isEdit=false">Cancel</button>
+                                  </div>
+                                    <button type="button" class="btn btn-info btn-sm">Add</button>
+                                    <div *ngIf="!s.isEdit">
+
+                                    <button class="btn btn-primary  btn-sm"  (click)="onEdit(s)">edit</button></div>
+                                    
+                                </td>
+                                <td> <button class="btn btn-danger btn-sm"  ng-click="delete($index)">delete</button></td>
+                
+                               
+                        </tr>
+                    </tbody>
+                
+                    </table> 
+             -->

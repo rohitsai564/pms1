@@ -1,0 +1,80 @@
+<div class="card text-center">
+      <div class="card-header col-sm-4">
+    <div class="col sm-6">
+      <form [formGroup]="searchSecurityName" (submit)="onSave()">
+  
+  <div class="rec">
+    <p><b>PortFolio Name: </b> {{receivedName}}</p>
+  </div>
+        <div class="ava">
+          <p><b>Available Balance: </b>{{availableAmount}}</p>
+        </div>
+        <div class="ac col-sm-6"> 
+          <label for="securityName">Security Name</label>
+          <select id="inputState" class="input-text" formControlName="securityName" placeholder="Enter securityName" style="width: 15rem;" [value]="searchSecurityName.value.securityName" [ngModel]="selected" (click)="onClick($event)">
+            <option *ngFor="let s of stock" value="{{s.symbol}}">{{s.securityName}}</option>
+          </select>
+          <span class="error_msg" *ngIf="searchSecurityName.controls['securityName'].touched">
+          </span>
+          </div>
+          <br>
+          <br>
+        <div class="col-sm-4">
+        <label>Transaction Date</label>
+        <input type="date" formControlName="transactionDate" class="form-control" placeholder="Select Date" required>
+        <br>
+        </div>
+  
+        <div class="unit col-sm-4">
+
+          <label>Units</label>
+    
+          <input type="text" formControlName="units" class="form-control" placeholder="Enter Units" [value]="searchSecurityName.value.units" required>
+    
+          <br>
+    
+           </div>
+  
+        <div class="price col-sm-4">
+        <label>Price</label>
+        <ng-container>
+          <input type="text" formControlName="price" class="form-control" readonly placeholder="Enter Price" required [(ngModel)]="searchSecurityName.value.price">
+        </ng-container>
+        <br>
+        </div>
+  
+        <div class="total col-sm-4">
+        <label>Total</label>
+        <input type="text" formControlName="totalTransaction" class="form-control" placeholder="Total" [value]="searchSecurityName.value.units * searchSecurityName.value.price" required>
+        <br>
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Save</button>
+  
+      </form>
+    </div>
+      </div>
+  </div>
+  <br>
+    <div class="scroll">
+      <table class="table table-striped">
+      <thead>
+      <th>Security Name</th>
+      <th>Transaction Date</th>
+      <th>Units</th>
+      <th>Price</th>
+      <th>TotalTransaction</th>
+      <th>Action</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let s of array">
+      <td>{{s.securityName}}</td>
+      <td>{{s.transactionDate}}</td>
+      <td>{{s.units}}</td>
+      <td>{{s.price}}</td>
+      <td>{{s.totalTransaction}}</td>
+      <td><button (click) = "deleteSecurity(s.securityName)"class="btn btn-danger">Delete</button></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>

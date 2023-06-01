@@ -1,0 +1,43 @@
+<div class="lan">
+<button routerLink="/header" type="button" class="btn btn-success">New Portfolio</button>
+<br>
+<br>
+
+        <div class="scroll">
+            <table class="table table-bordered" border="5rem">
+            <thead class="table-light">
+            <th>Portfolio Name</th>
+            <!-- <th>fundamanagerName</th> -->
+            <th>Portfolio Type</th>
+            <th>Base Currency</th>
+            <th>Rebalancing Frequency</th>
+            <th>Bench Mark</th>
+            <th>Exchange</th>
+            <th>Investment Value</th>
+            <!-- <th>Balance</th> -->
+            <th>Theme</th>
+            <th>Action</th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let p of portfolioArray">
+            <td [routerLink]="['/security', p.portfolioName, p.investmentValue]" style="cursor: pointer;">{{p.portfolioName}}</td>
+            <!-- <td>{{p.fundamanagerName}}</td> -->
+            <td>{{p.portfolioType}}</td>
+            <td>{{p.baseCurrency}}</td>
+            <td>{{p.rebalancingFrequency}}</td>
+            <td>{{p.benchMark}}</td>
+            <td>{{p.exchange}}</td>
+            <td>{{p.investmentValue}}</td>
+            <!-- <td>{{p.balance}}</td> -->
+            <!-- [routerLink]="['/assetlist', p.themeName]" style="cursor: pointer;" -->
+            <td><a class="a" (click)="click(p.themeName)" style="text-decoration:none ; color:#0c0000 ;cursor: pointer;">{{p.themeName}}</a></td>
+            <td>
+                <button class="btn btn-success" routerLink="/theme">View</button>
+                <button (click) = "deletePortfolio(p.portfolioName)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+
+        </div>

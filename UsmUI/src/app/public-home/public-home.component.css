@@ -1,0 +1,79 @@
+/*.body{
+  /* background-color: rgb(71, 71, 131); */
+ /* background-image: url("../../../assets/stock.jpg")
+  /* position: absolute;  */
+  /* height: 150%;
+  background-size: cover; */
+/*}
+navbar {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* .navbar {
+  background-color: rgb(242, 242, 248);
+} */
+/* .nav-item{
+  color: bisque;
+} */
+
+
+
+.home{
+    /* background-color: aquamarine; */
+    /* The image used */
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/images/images.jpg");
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  /* body,
+  html {
+    height: 100%;
+     padding-bottom: 50px;
+  } */
+  
+  .b{
+    padding-top: 150px;
+    
+    }
+  
+  .c{
+    padding-top: 100px;
+  }
+  
+  .d{
+    padding-top: 50px;
+  }
+  
+  
+/*   
+    .left, .right {
+      height: 100vh;
+     
+      
+    } */
+  
+    /* @media screen and (min-width:768px)
+    {
+      .left, .right{
+          height: 100vh;
+          
+      } 
+    } */
+  
+    .left {
+      width: 100%;
+    }
+  
+    .right{
+      width: 100%;
+    }
+    
+    

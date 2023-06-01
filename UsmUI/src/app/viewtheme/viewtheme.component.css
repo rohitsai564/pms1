@@ -1,0 +1,17 @@
+/* .table{
+    border: 2px;
+    border: 1px solid black;
+  border-radius: 10px;
+}
+.td{
+    border: 1px;
+}
+.th{
+    border: 1px;
+} */
+table, th, td {
+    border: 2px solid;
+  }
+table{
+    margin-top: 5%;
+}

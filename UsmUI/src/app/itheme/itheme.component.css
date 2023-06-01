@@ -1,0 +1,55 @@
+.th{
+     text-align:center; 
+     /* background-color: rgb(155, 222, 148); */
+   
+    }
+    .body{
+     background-color: blue;
+    }
+.all
+{ 
+     margin-top: rem; 
+     background-color: rgb(155, 222, 148);
+     width: auto;
+
+    } 
+    .tn{    
+     text-align:center;
+     display: inline-block;
+     margin-left: 3rem;
+     margin-top: 3rem;
+     text-align:center;
+     width: 20%;
+     padding: 5px;
+     font-size: 16px;
+     border-radius: 10px;
+     border: 1px solid rgb(5, 0, 0);
+     color: #040248;
+    }   
+    .rk{
+     text-align:center;
+     margin-left: 10rem;
+     margin-top: -4rem;
+     width: 20%;
+     padding: 5px;
+     font-size: 16px;
+     border-radius: 10px;
+     border: 1px solid rgb(5, 0, 0);
+     /* color: #1dea32; */
+     color: #040248;
+    }
+    .in{
+     text-align:center;
+     /* display: inline-block; */
+     margin-left:55rem;
+     margin-top: -64px;
+     width: 20%;
+     padding: 5px;
+     font-size: 16px;
+     border-radius: 10px;
+     border: 1px solid rgb(5, 0, 0);
+     color: #040248;
+    }
+    .input-text{
+     width: 10rem;
+    }

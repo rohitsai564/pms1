@@ -1,0 +1,87 @@
+<div class="login-section">
+    <form [formGroup]="loginForm" (submit)="onLogin()">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4 login">
+        <div class="card">
+          <h5 class="card-header">Login</h5>
+          <div class="card-body">
+            <div class="mb-3 alert alert-primary" *ngIf="msg">
+              {{msg}}
+            </div>
+  
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email/Username</label>
+              <input type="email" class="form-control" formControlName="username" >
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="btn btn-primary" value="Login" [disabled]="!loginForm.valid">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <img [src] ="ImagePath" id="login-img"
+        style="width: 600px;height: 400px;">
+      </div>
+    </div>
+  </form>
+  </div>
+  
+
+  
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/images/logo7.jpg" alt="" width="60px" height="60px" alt="">
+    </a>
+    
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" routerLink="/all">All Stocks</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filter
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/isin_no">By ISIN No</a></li>
+            <li><a class="dropdown-item" routerLink="/industry">By Industry</a></li>
+            <li><a class="dropdown-item" routerLink="/symbol">By Symbol</a></li>
+            <li><a class="dropdown-item" routerLink="/sector">By Sector</a></li>
+            <li><a class="dropdown-item" routerLink="/security">By Security</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+
+       <!-- <li class="navbar-nav">
+      <a class="nav-link active" routerLink="/contact" target="_self">Contact</a>
+    </li>
+    <li class="navbar-nav">
+      <a class="nav-link active" routerLink="/about">About Us</a>
+    </li> -->
+    </div>
+  </div>
+</nav>
+      
+    

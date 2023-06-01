@@ -1,0 +1,28 @@
+<div class="scroll">
+  <table class="table table-bordered" border="5rem">
+  <thead class="table-light">
+  <th>Theme Name</th>
+  <!-- <th>fundamanagerName</th> -->
+  <th>Asset Class</th>
+  <th>Sub-Asset Class</th>
+  <th>Allocation %</th>
+  <th>Asset Description</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of asset">
+  <!-- <td>{{p.portfolioName}}</td> -->
+  <!-- <td>{{p.fundamanagerName}}</td> -->
+  <td >{{p.themeName}}</td>
+  <td>{{p.assetClass}}</td>
+  <td>{{p.subAssetClass}}</td>
+  <td>{{p.allocation}}</td>
+  <td>{{p.assetDesc}}</td>
+ 
+  <!-- <td> -->
+      <!-- <button class="btn btn-success" routerLink="/theme">View</button>
+      <button (click) = "deletePortfolio(p.portfolioName)" class="btn btn-danger" style="margin-left: 10px;">Delete</button> -->
+  <!-- </td> -->
+  </tr>
+  </tbody>
+  </table>
+  </div>

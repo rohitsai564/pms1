@@ -1,0 +1,53 @@
+<!-- 
+
+<div class="card text-center">
+    <div class="card-header">
+      <form #searchIsin="ngForm" (submit)="searchSubmit(searchIsin)">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search by ISIN NO" aria-label="Recipient's username" aria-describedby="button-addon2" name="isinNo" ngModel #isinNo="ngModel">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Get Details">Submit</button>
+      </div>
+      </form>
+    </div>
+
+
+    <table class="table  table-bordered">
+
+        <thead class="table-dark">
+          <tr>
+
+        
+                <th>Security Code</th>
+                <th>Symbol</th>
+                <th>Security Name</th>
+                <th>ISIN No</th>
+                <th> Sector</th>
+                <th> Industry</th>
+                <th>Exchange</th>
+                <th>Currency</th>
+                <th>Gics</th>
+                <th>Price</th>
+                <th>Country</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let s of stocksArr;let i = index">
+                
+                <td>{{s.securityCode}}</td> 
+                    <td>{{s.symbol}}</td>
+                    <td>{{s.securityName}}</td>
+                    <td>{{s.isinNo}}</td>
+                    <td>{{s.sector}}</td>
+                    <td>{{s.industry}}</td>
+                    <td>{{s.exchange}}</td>
+                    <td>{{s.currency}}</td>
+                    <td>{{s.gics}}</td>
+                    <td>{{s.price}}</td>
+                    <td>{{s.country}}</td>
+    
+                   
+            </tr>
+        </tbody>
+    
+        </table> -->
